@@ -28,7 +28,7 @@ The Korean Dataset
 The dataset (56609x342) can be downloaded from:
 https://doi.org/10.5281/zenodo.8333650
 
-The Sweden Dataset
+The Swedish Dataset
 The dataset (19765x1183) is available in the ArrayExpress database under accession number E-MTAB-12862.
 
 Running the Pipeline
@@ -44,7 +44,7 @@ Step 2: Download Input Files
 Download the following files into the 00_input_files_gtf_raw_counts folder:
 
 The GTF file from the Gencode v35 GTF file.
-The raw count datasets (Korean and Sweden datasets) from their respective links.
+The raw count datasets (Korean and Swedish datasets) from their respective links.
 Step 3: Run the Pipeline
 Once the input files are in place, navigate back to the main directory and execute the pipeline:
 
