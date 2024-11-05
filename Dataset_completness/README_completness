@@ -1,11 +1,14 @@
 Dataset Completeness Pipeline
-This pipeline is designed to generate bar plots for four gene categories: protein-coding, ribosomal RNA, mitochondrial RNA, and other non-coding RNA, 
+This pipeline is designed to check the RNA-seq raw count data completness.
+It generates bar plots for four gene categories: protein-coding, ribosomal RNA, mitochondrial RNA, and other non-coding RNA, 
 using raw count datasets produced from BAM files (e.g., using HTSeq count or Subread featureCounts).
+
 ################################################################################
 Pipeline Overview
 The primary aim of this pipeline is to assess the completeness of raw count datasets, typically downloaded from public repositories like GEO. 
 Since raw counts are essential for differential expression analysis using tools like DESeq2 and limma, 
 this pipeline is useful for performing quality control of raw datasets before proceeding with differential analysis.
+
 ###############################################################################
 Key Features:
 Gene Category Classification: The pipeline calculates the percentage of reads assigned to four key gene categories typically found in datasets generated using a Total RNA protocol.
@@ -18,8 +21,6 @@ The pipeline calculates the percentage of reads assigned to four gene categories
 The pipeline checks its classification into one of the four categories.
 The percentage of counts in each category is calculated and visualized in a bar plot.
 This allows researchers to assess whether the raw count data from their RNA-Seq experiments is appropriately distributed across these categories.
-
-
 
 ##################################################################################
 Pre-requisites
@@ -56,7 +57,6 @@ The raw count datasets (Korean and Sweden datasets) from their respective links.
 Once the input files are in place, navigate back to the main directory and execute the pipeline:
 cd ../
 python3 dataset_completness.py
-
 
 ###########################################################################################################
 Gene Categories
