@@ -3,6 +3,14 @@ Pipeline Overview
 This pipeline is designed to generate bar plots for 4 categories of genes: protein-coding, ribosomal RNA, mitochondrial RNA, and other non-coding RNA from Raw count
 datasets produced from bam files (ex. using HTseq, subread feature counts).
 
+AIM:
+The pipeline aims to assess the completeness of raw count datasets downloaded from public repositories such as GEO. 
+Since raw counts are essential for differential expression analysis using tools like DESeq2 and limma, 
+this pipeline is useful for quality control of raw datasets before proceeding with differential analysis.
+
+Specifically, the pipeline calculates the percentage of reads assigned to four gene categories that should be present in a dataset generated using a Total RNA protocol. For each gene in the raw RNA-Seq count tables, 
+the pipeline checks its classification into one of the four categories. The percentage of counts in each category is then calculated and visualized in a bar plot.
+
 
 
 INPUT FILES: 
@@ -19,15 +27,8 @@ The dataset (19765x1183) is available in the ArrayExpress database under accessi
 
 
 
-PIPELINE AIM:
-The pipeline aims to assess the completeness of raw count datasets downloaded from public repositories such as GEO. 
-Since raw counts are essential for differential expression analysis using tools like DESeq2 and limma, 
-this pipeline is useful for quality control of raw datasets before proceeding with differential analysis.
 
-Specifically, the pipeline calculates the percentage of reads assigned to four gene categories that should be present in a dataset generated using a Total RNA protocol. For each gene in the raw RNA-Seq count tables, 
-the pipeline checks its classification into one of the four categories. The percentage of counts in each category is then calculated and visualized in a bar plot.
-
-Gene Categories:
+GENE CATEGORIES:
 
 
 Gene Categories:
