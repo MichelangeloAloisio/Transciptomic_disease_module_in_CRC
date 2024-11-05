@@ -1,7 +1,7 @@
 Dataset Completeness Pipeline
-This pipeline takes part of the scientifca paper: 'Uncovering Transcriptomic Modules in Colorectal Cancer: A Causal Inference Framework for Network-Based Analysis' 
+This pipeline takes part of the scientific paper: 'Uncovering Transcriptomic Modules in Colorectal Cancer: A Causal Inference Framework for Network-Based Analysis' 
 
-is designed to generate bar plots for four gene categories: protein-coding, ribosomal RNA, mitochondrial RNA, and other non-coding RNA, using raw count datasets produced from BAM files (e.g., using HTSeq count or Subread featureCounts).
+It is designed to generate bar plots for four gene categories: protein-coding, ribosomal RNA, mitochondrial RNA, and other non-coding RNA, using raw count datasets produced from BAM files (e.g., using HTSeq count or Subread featureCounts).
 
 Pipeline Overview
 The primary aim of this pipeline is to assess the completeness of raw count datasets, typically downloaded from public repositories like GEO. Since raw counts are essential for differential expression analysis using tools like DESeq2 and limma, this pipeline is useful for performing quality control of raw datasets before proceeding with differential analysis.
