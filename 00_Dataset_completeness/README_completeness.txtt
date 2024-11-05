@@ -1,13 +1,14 @@
 Dataset Completeness Pipeline
 This pipeline takes part of the scientific paper: 'Uncovering Transcriptomic Modules in Colorectal Cancer: A Causal Inference Framework for Network-Based Analysis' 
 
-It is designed to generate bar plots for five gene categories: protein-coding, ribosomal RNA, mitochondrial RNA, and other non-coding RNA, using raw count datasets produced from BAM files (e.g., using HTSeq count or Subread featureCounts).
-
+This tool generates bar plots for five gene categories (protein-coding, ribosomal RNA, mitochondrial RNA, and other non-coding RNA),
+using count datasets (RAW or NORMALIZED) downloaded from GEO   (e.g., generated with HTSeq count or Subread featureCounts) from Total or poly-A RNAseq libraries.
 Pipeline Overview
 The primary aim of this pipeline is to assess the completeness of raw count datasets, typically downloaded from public repositories like GEO. Since raw counts are essential for differential expression analysis using tools like DESeq2 and limma, this pipeline is useful for performing quality control of raw datasets before proceeding with differential analysis.
 
 Key Features:
-Gene Category Classification: The pipeline calculates the percentage of reads assigned to five key gene categories typically found in datasets generated using a Total RNA protocol.
+Gene Category Classification: 
+The pipeline calculates the percentage of reads assigned to the five key gene categories defined in the papeer, typically found in datasets generated using a Total RNA protocol.
 Bar Plot Visualization: After classification, the percentage of counts in each category is calculated and visualized in a bar plot, making it easier to assess dataset composition.
 Aim
 The pipeline calculates the percentage of reads assigned to four gene categories that should be present in a dataset generated using a Total RNA protocol. For each gene in the raw RNA-Seq count tables:
