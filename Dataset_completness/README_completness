@@ -2,9 +2,17 @@ Pipeline Overview
 
 This pipeline is designed to generate bar plots for 4 categories of genes: protein-coding, ribosomal RNA, mitochondrial RNA, and other non-coding RNA.
 
-Specifically, gene types (gene_type) are extracted from the GTF file downloaded from ENCODE (gencode.v35.basic.annotation.gtf.gz).
+Specifically, gene types (gene_type) are extracted from the GTF file downloaded from ENCODE:
+https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_35/gencode.v35.basic.annotation.gtf.gz.
 
-For each gene present in the raw RNA-Seq count tables, the pipeline checks its classification into one of the 4 categories. The percentage of counts for each category is then calculated, and this data is visualized in a bar plot.
+Moreover, the raw RNA-seq count datasets Korean and Sweden, were downloaded from the following URLs:
+a)The Korean dataset (56609x342) was downloaded from  https://doi.org/10.5281/zenodo.8333650;
+b) The Sweden dataset (19765x1183)was downloaded from ArrayExpress database  under accession number E-MTAB-12862.
+For each gene present in the raw RNA-Seq count tables, the pipeline checks its classification into one of the 4 categories. 
+The percentage of counts for each category is then calculated, and this data is visualized in a bar plot.
+
+Gene Categories:
+
 
 Gene Categories:
 Protein-Coding Genes:
