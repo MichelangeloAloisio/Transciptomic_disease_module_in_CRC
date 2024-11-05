@@ -151,11 +151,11 @@ os.chdir(current_directory)
 gtf_file_path = os.path.join(current_directory, '00_input_files_gtf_raw_counts', 'gencode.v35.basic.annotation.gtf.gz')
 gene_analysis = GeneDatasetCompleteness(gtf_file_path)
 
-# Define the paths for the Sweden and Korean datasets in the current directory
-dataframe_sweden = os.path.join(current_directory, '00_input_files_gtf_raw_counts', 'CRC.SW.mRNA.symbol.count.txt')  # insert the raw count files
+# Define the paths for the Swedish and Korean datasets in the current directory
+dataframe_swedish = os.path.join(current_directory, '00_input_files_gtf_raw_counts', 'CRC.SW.mRNA.symbol.count.txt')  # insert the raw count files
 dataframe_korean = os.path.join(current_directory, '00_input_files_gtf_raw_counts', 'CMCBSN_expectedcount_342.txt')  # insert the raw count files
 
 # Run the analysis for both datasets
-gene_analysis.run_analysis(dataframe_sweden, 'Sweden_completeness.csv')
+gene_analysis.run_analysis(dataframe_swedish, 'Swedish_completeness.csv')
 gene_analysis.run_analysis(dataframe_korean, 'Korean_completeness.csv')
 
