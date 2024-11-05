@@ -1,0 +1,60 @@
+Pipeline Overview
+
+This pipeline is designed to generate bar plots for 4 categories of genes: protein-coding, ribosomal RNA, mitochondrial RNA, and other non-coding RNA.
+
+Specifically, gene types (gene_type) are extracted from the GTF file downloaded from ENCODE (gencode.v35.basic.annotation.gtf.gz).
+
+For each gene present in the raw RNA-Seq count tables, the pipeline checks its classification into one of the 4 categories. The percentage of counts for each category is then calculated, and this data is visualized in a bar plot.
+
+Gene Categories:
+Protein-Coding Genes:
+
+'protein_coding'
+'TR_C_gene'
+'TR_J_gene'
+'TR_V_gene'
+'TR_D_gene'
+'IG_C_gene'
+'IG_J_gene'
+'IG_V_gene'
+'IG_D_gene'
+Pseudogenes (Non-Coding):
+
+'transcribed_unitary_pseudogene'
+'TR_J_pseudogene'
+'translated_unprocessed_pseudogene'
+'unprocessed_pseudogene'
+'processed_pseudogene'
+'IG_J_pseudogene'
+'IG_C_pseudogene'
+'IG_V_pseudogene'
+'translated_processed_pseudogene'
+'polymorphic_pseudogene'
+'unitary_pseudogene'
+'pseudogene'
+'IG_pseudogene'
+'TR_V_pseudogene'
+Ribosomal RNA (Non-Coding):
+
+'rRNA'
+'rRNA_pseudogene'
+Mitochondrial RNA (Non-Coding):
+
+'Mt_rRNA'
+'Mt_tRNA'
+Other Non-Coding RNA:
+
+'lncRNA'
+'TEC'
+'scaRNA'
+'misc_RNA'
+'scRNA'
+'sRNA'
+'transcribed_unprocessed_pseudogene'
+'snoRNA'
+'snRNA'
+'miRNA'
+'vault_RNA'
+'ribozyme'
+  
+ 
