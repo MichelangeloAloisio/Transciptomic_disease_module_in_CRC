@@ -1,20 +1,31 @@
 Pipeline Overview
 
-This pipeline is designed to generate bar plots for 4 categories of genes: protein-coding, ribosomal RNA, mitochondrial RNA, and other non-coding RNA.
+This pipeline is designed to generate bar plots for 4 categories of genes: protein-coding, ribosomal RNA, mitochondrial RNA, and other non-coding RNA from Raw count
+datasets produced from bam files (ex. using HTseq, subread feature counts).
+
 
 
 INPUT FILES: 
-1) GTF file: 
-Specifically, gene types (gene_type) are extracted from the GTF file downloaded from ENCODE:
-https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_35/gencode.v35.basic.annotation.gtf.gz.
+1) GTF File:
+Gene annotations (specifically, the gene type) are extracted from the GTF file downloaded from ENCODE:
+https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_35/gencode.v35.basic.annotation.gtf.gz
 
-2) :The Korean dataset (56609x342) was downloaded from  https://doi.org/10.5281/zenodo.8333650;
-3) The Sweden dataset (19765x1183) was downloaded from ArrayExpress database  under accession number E-MTAB-12862.
+2) The Korean Dataset:
+The dataset (56609x342) can be downloaded from:
+https://doi.org/10.5281/zenodo.8333650.
+
+3) The Sweden Dataset:
+The dataset (19765x1183) is available in the ArrayExpress database under accession number E-MTAB-12862.
 
 
-For each gene present in the raw RNA-Seq count tables, the pipeline checks its classification into one of the 4 categories. 
-The percentage of counts for each category is then calculated, and this data is visualized in a bar plot.
 
+PIPELINE AIM:
+The pipeline aims to assess the completeness of raw count datasets downloaded from public repositories such as GEO. 
+Since raw counts are essential for differential expression analysis using tools like DESeq2 and limma, 
+this pipeline is useful for quality control of raw datasets before proceeding with differential analysis.
+
+Specifically, the pipeline calculates the percentage of reads assigned to four gene categories that should be present in a dataset generated using a Total RNA protocol. For each gene in the raw RNA-Seq count tables, 
+the pipeline checks its classification into one of the four categories. The percentage of counts in each category is then calculated and visualized in a bar plot.
 
 Gene Categories:
 
