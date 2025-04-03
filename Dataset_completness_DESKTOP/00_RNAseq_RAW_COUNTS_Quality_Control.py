@@ -350,9 +350,7 @@ current_directory = os.getcwd()
 
 # Define Raw count matrix file name
 ## Important note: the first column of the matrix must be named 'SYMBOL' or 'symbol'
-#raw_matrix_file = 'SHORT_CRC.SW.mRNA.symbol.count.txt'
-raw_matrix_file = 'CRC.SW.mRNA.symbol.count.txt' ## Swedish dataset was retrieved from the ArrayExpress database under accession number E-MTAB-12862
-# raw_matrix_file = 'CMCBSN_expectedcount_342.txt'  # Korean RNASeq matrix downlaoded from https://doi.org/10.5281/zenodo.8333650 (Lee J. et al. (2024))
+raw_matrix_file = 'CMCBSN_expectedcount_342.txt'  # Korean RNASeq matrix downlaoded from https://doi.org/10.5281/zenodo.8333650 (Lee J. et al. (2024))
 
 ########################################################################
 ## PATH INPUT FILES
