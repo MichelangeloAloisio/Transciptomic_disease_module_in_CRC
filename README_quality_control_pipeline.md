@@ -1,15 +1,24 @@
 RNA-Seq Quality Control Pipeline
+
+
+
 Pipeline Overview
+
+
+
 This RNA-Seq Quality Control pipeline processes raw RNA-Seq count datasets to extract essential information and assess the quality of the RNA-Seq count matrix.
 
 The pipeline performs the following tasks:
 
-Sample Coverage Calculation:
+Sample Coverage Calculation (ONLY THIS PART OF PIPELINE IS DESCRIBED IN THE PAPER):
 
 Computes the coverage for each sample (saved in 01_COVERAGE_PER_SAMPLE_TABLE.csv), allowing for the manual inspection of low-coverage samples.
+
 Distribution of Counts:
 
 Visualizes the distribution of counts to determine whether the dataset contains RAW counts or NORMALIZED counts.
+
+
 Gene Category Distribution:
 
 Calculates and visualizes the percentage of counts per gene category. This helps assess the completeness of the dataset.
